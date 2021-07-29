@@ -10,7 +10,9 @@ function preload() {
 }
 
 function setup() {
-	socket = io.connect("http://localhost:3000")
+	//socket = io.connect("http://localhost:3000")
+	socket = io.connect("https://collab-sound2.herokuapp.com/")
+	
 	initializeNotes()
 	initializeCounters()
 	createCanvas(windowWidth, windowHeight);
